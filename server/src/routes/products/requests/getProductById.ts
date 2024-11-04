@@ -4,7 +4,7 @@ import { products } from '../../../constants/products';
 
 export const getProductById = (req: Request, res: Response): void => {
     const productId = parseInt(req.params.id, 10);
-    const product = products.find((p) => p.id === productId);
+    const product = products.find((p) => p.id === productId); // find product by id
 
     if (!product) {
         res.status(404).json({ error: 'Product not found' });
