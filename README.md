@@ -2,6 +2,8 @@
 
 Hi all!
 This is Baris Ozkal.
+### Repo url : https://github.com/rbarisozkal/fullstack-app
+
 On frontend, I wanted to use especially React Query for fetching data from the server. It is a great library for fetching, caching and updating/manipulating data reactively.
 
 ------------
