@@ -1,29 +1,61 @@
 # Fullstack React + Express Application
 
-This is a minimal fullstack application that uses Express for the backend and React for the frontend. It is bundled using Webpack. The frontend communicates with the backend via an API.
+Hi all!
+This is Baris Ozkal.
+On frontend, I wanted to use especially React Query for fetching data from the server. It is a great library for fetching, caching and updating/manipulating data reactively.
+
+------------
+## How to run the project
+You can run the project running the following commands in the root folder of the project.
+```bash
+npm run dev
+```
+
+or you can run the project in two different terminals running the following commands in the root folder of the project.
+```bash
+cd client
+npm install
+npm start
+```
+```bash
+cd server
+npm install
+npm start
+```
+I have used Jest + Supertest for testing the server side. You can run the tests running the following commands in the root folder of the project.
+```bash
+cd server
+npm test
+```
 
 ## Project Structure
 
 ```
-project-folder/
+project-root-folder/
 │
-├── client/                # React app folder
-│   ├── public/
-│   │   ├── index.html     # HTML template
-│   ├── src/               # React source files
-│   │   ├── App.tsx        # Main React component
-│   │   ├── index.tsx      # Entry point for React
-│   └── package.json       # Dependencies and scripts
-│   └── tsconfig.json      # TypeScript configuration
-│   └── webpack.config.js  # Webpack configuration for React
-│
-├── server/                # Express server folder
-│   ├── src/               # Source files
-│   │   ├── server.js      # Express server entry point
-│   └── package.json       # Express dependencies and scripts
-│   └── tsconfig.json      # TypeScript configuration
-│
-└── package.json           # Root package.json to manage both client and server
+├── client/                  # React frontend
+│   ├── public/               # Public files
+│   ├── src/                  # Source files
+│   │   ├── features/       # Features
+│   │   │   ├── products/    # Products feature
+│   │   │   │   ├── components/  # Components
+│   │   │   │   ├── hooks/       # Custom hooks
+│   │   │   │   ├── api/       # API functions
+│   │   │   │   ├── configurations/       # Configurations
+│   │   app.tsx               # Main app component
+│   │   index.tsx             # Entry point
+│   │   tsconfig.json         # TypeScript configuration
+│   │   ...
+├── server/                  # Express backend
+│   ├── src/                  # Source files
+│   │   ├── constants/        # Constants
+│   │   ├── controllers/      # Controllers
+│   │   ├── routes/           # Routes
+│   │   ├── models/         # Models
+│   │   ├── tests/         # Tests
+│   │   ├── types/         # Types
+│   │   server.ts                # Express app
+│   │   ...
 ```
 
 ## Prerequisites

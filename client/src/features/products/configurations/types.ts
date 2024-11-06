@@ -1,9 +1,6 @@
 export interface Product {
-    id: string;
+    id: number;
     name: string;
     price: number;
     description: string;
-}
-export interface Products {
-    products: Product[];
 }
